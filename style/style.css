@@ -9,19 +9,23 @@
         transform: scale(1);
     }
 }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poiret';
 }
+
 body {
     background-color: #000;
 }
+
 .container {
     width: 900px;
-    margin: auto;   
+    margin: auto;
 }
+
 .content {
     margin-top: 40px;
     display: flex;
@@ -31,37 +35,44 @@ body {
     font-size: 18px;
     line-height: 25px;
 }
+
 .heart_img {
     animation: heart 2s infinite;
     width: 200px;
     height: 200px;
 }
+
 .slider {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-top: 70px;
 }
+
 .items {
     width: 500px;
     border-radius: 30px;
     overflow: hidden;
 }
+
 .photo {
     display: block;
     width: 100%;
     height: 100%;
-    
+
 }
+
 .back,
 .next {
     width: 50px;
     height: 50px;
     cursor: pointer;
 }
+
 .wrapper {
     display: flex;
 }
+
 .item {
     width: 500px;
     height: 400px;
@@ -71,7 +82,8 @@ body {
     text-align: center;
     transform: translateX(0);
     transition: 0.9s all;
-} 
+}
+
 .btn {
     display: block;
     margin: 40px auto;
@@ -89,56 +101,59 @@ body {
     transition: 0.7s all;
     outline: none;
 }
+
 .btn:hover {
     background-color: rgb(179, 99, 99);
     color: rgb(204, 204, 204);
 }
 
 .img {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    height: 1px;
 }
+
 .heart {
     visibility: hidden;
-    opacity: 0;
     width: 50px;
     height: 50px;
     transform: translateY(0px);
     transition-property: transform, opacity;
 }
-.ease-in{
+
+.ease-in {
     visibility: initial;
     opacity: 1;
     transition-timing-function: ease-in;
     transition-duration: 8s, 3s;
 }
-.ease-in2{
+
+.ease-in2 {
     visibility: initial;
     opacity: 1;
     transition-duration: 6s, 9s;
     transition-timing-function: ease-in;
 }
-.ease-out2{
+
+.ease-out2 {
     visibility: initial;
     opacity: 1;
     transition-duration: 9s, 7s;
     transition-timing-function: ease-out;
 }
-.ease-out{
+
+.ease-out {
     visibility: initial;
     opacity: 1;
     transition-duration: 7s, 5s;
     transition-timing-function: ease-out;
 }
-.ease-in-out2{
+
+.ease-in-out2 {
     visibility: initial;
     opacity: 1;
     transition-duration: 8s, 5s;
     transition-timing-function: ease-in-out;
 }
-.ease-in-out{
+
+.ease-in-out {
     visibility: initial;
     opacity: 1;
     transition-duration: 7s, 8s;
