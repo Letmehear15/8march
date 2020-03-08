@@ -103,48 +103,42 @@ body {
 .heart {
     visibility: hidden;
     opacity: 0;
-    transform: translateY(-200px);
+    transform: translateY(20px);
     transition-property: transform, opacity;
 }
 .ease-in{
     visibility: initial;
     opacity: 1;
-    transform: translateY(-820px);
     transition-timing-function: ease-in;
     transition-duration: 8s, 3s;
 }
 .ease-in2{
     visibility: initial;
     opacity: 1;
-    transform: translateY(-820px);
     transition-duration: 6s, 9s;
     transition-timing-function: ease-in;
 }
 .ease-out2{
     visibility: initial;
     opacity: 1;
-    transform: translateY(-820px);
     transition-duration: 9s, 7s;
     transition-timing-function: ease-out;
 }
 .ease-out{
     visibility: initial;
     opacity: 1;
-    transform: translateY(-820px);
     transition-duration: 7s, 5s;
     transition-timing-function: ease-out;
 }
 .ease-in-out2{
     visibility: initial;
     opacity: 1;
-    transform: translateY(-820px);
     transition-duration: 8s, 5s;
     transition-timing-function: ease-in-out;
 }
 .ease-in-out{
     visibility: initial;
     opacity: 1;
-    transform: translateY(-820px);
     transition-duration: 7s, 8s;
     transition-timing-function: ease-in-out;
 }

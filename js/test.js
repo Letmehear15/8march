@@ -10,7 +10,7 @@ btn.addEventListener('click', ()=>{
     rand(arrImg, arrClass); 
     setTimeout(()=>{
         up(arrImg);
-    },500) 
+    },400) 
 });
 
 function clone() {
@@ -22,7 +22,7 @@ function clone() {
 }
 function up(el) {   
     el.forEach(element=> {
-        element.style.transform = `translateY(-${height}px)`;
+        element.style.transform = `translateY(-${height + 100}px)`;
         setTimeout(()=>{
             element.style.opacity = 0; 
         },1000)
