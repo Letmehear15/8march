@@ -5,7 +5,7 @@ let arrClass = ['ease-in','ease-in2','ease-out2','ease-out','ease-in-out2','ease
 let arrImg = [];
 let height = heart.offsetTop;
 
-for(let i = 0; i < 15; i++) {
+for(let i = 0; i < 50; i++) {
     let clone = heart.cloneNode(true);
     containerImg.appendChild(clone);
 
@@ -15,7 +15,14 @@ for(let i = 0; i < 15; i++) {
 function up(el) {   
     btn.addEventListener('click', ()=>{
         rand(el, arrClass);
-        el.style.transform = `translateY(-${height}px)`;
+        el.style.transform = `translateY(-${height+300}px)`;
+        setTimeout(() => {
+            el.style.opacity = 0;
+            el.style.zindex = -1;
+        }, 5000)
+        setTimeout(()=>{
+            el.style.display = 'none';
+        },9000) 
     })
 }
 
@@ -25,12 +32,4 @@ function rand(el,cl) {
 }
 
     
-// setInterval(() => {
-//     if(el.style.transform = `translateY(-${height}px)`) {
-//         el.style.opacity = 0;
-//         el.style.zindex = -1;
-//     }
-// }, 4000)
-// setTimeout(()=>{
-//     el.style.display = 'none';
-// },9000) 
+
