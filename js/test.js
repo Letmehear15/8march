@@ -5,43 +5,39 @@ let arrClass = ['ease-in','ease-in2','ease-out2','ease-out','ease-in-out2','ease
 let arrImg = [];
 let height = heart.offsetTop;
 
-
-
 btn.addEventListener('click', ()=>{
     clone();
-    up(arrImg);
-    rand(arrImg, arrClass);
+    rand(arrImg, arrClass); 
+    setTimeout(()=>{
+        up(arrImg);
+    },500) 
 });
 
 function clone() {
-    for(let i = 0; i < 15; i++) {
+    for(let i = 0; i < 20; i++) {
         let clone = heart.cloneNode(true);
         containerImg.appendChild(clone);
-    
         arrImg.push(clone);
-    }
+    }    
 }
 function up(el) {   
-    el.forEach(element => {
-        // element.style.transform = `translateY(-${height}px)`;
-        setInterval(() => {
-            if(element.style.transform = `translateY(-${height}px)`) {
-                element.style.opacity = 0;
-            }
-        }, 4000)
+    el.forEach(element=> {
+        element.style.transform = `translateY(-${height}px)`;
+        setTimeout(()=>{
+            element.style.opacity = 0; 
+        },1000)
         setTimeout(()=>{
             element.remove(element);
-        },8000) 
-    });
+        },7000)
+    })  
 }
-
 function rand(el,cl) {
-
     el.forEach(element=> {
         let index = Math.floor(Math.random()* arrClass.length);
         element.classList.add(cl[index]);
     }) 
 }
+
 
     
 

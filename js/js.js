@@ -16,15 +16,6 @@ function up(el) {
     btn.addEventListener('click', ()=>{
         rand(el, arrClass);
         el.style.transform = `translateY(-${height}px)`;
-        setInterval(() => {
-            if(el.style.transform = `translateY(-${height}px)`) {
-                el.style.opacity = 0;
-                el.style.zindex = -1;
-            }
-        }, 4000)
-        setTimeout(()=>{
-            el.style.display = 'none';
-        },9000)
     })
 }
 
@@ -34,4 +25,12 @@ function rand(el,cl) {
 }
 
     
-
+// setInterval(() => {
+//     if(el.style.transform = `translateY(-${height}px)`) {
+//         el.style.opacity = 0;
+//         el.style.zindex = -1;
+//     }
+// }, 4000)
+// setTimeout(()=>{
+//     el.style.display = 'none';
+// },9000) 
